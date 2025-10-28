@@ -7,8 +7,11 @@ const Login = () => {
 
   const submitHandler = (e) =>{
     e.preventDefault();
-    
-    console.log("fomr sumbited");
+    console.log("email is", email);
+    console.log("password is", pass);
+
+    setEmail('');
+    setPass('');
   }
 
   return (
@@ -21,25 +24,23 @@ const Login = () => {
           >
 
             <input 
-              className="border-2 border-emerald-600 py-3 text-xl px-5 rounded-full outline-none placeholder:text-gray-400" 
-              placeholder="Email" 
               type="email" 
-              value={email}
+              placeholder="Email" 
+              className="border-2 border-emerald-600 py-3 text-xl px-5 rounded-full outline-none placeholder:text-gray-400" 
               required
+              value={email}
               onChange={(e)=>{
                 setEmail(e.target.value);
-                console.log(e.target.value)
               }}
               />
 
             <input 
-              className="border-2 mt-3 border-emerald-600 py-3 text-xl px-5 rounded-full outline-none placeholder:text-gray-400" 
-              placeholder="Enter your password" 
               type="password" 
+              placeholder="Enter your password" 
+              className="border-2 mt-3 border-emerald-600 py-3 text-xl px-5 rounded-full outline-none placeholder:text-gray-400" 
               value={pass}
               onChange={(e)=>{
                 setPass(e.target.value);
-                console.log(e.target.value)
               }}
               required
               />
