@@ -1,10 +1,11 @@
-import { EmployeeDashboard, Login } from './components/Index'
+import { AdminDashboard, EmployeeDashboard, Login } from './components/Index'
 
 const App = () => {
   return (
     <>
       {/* <Login /> */}
-      <EmployeeDashboard/>
+      {/* <EmployeeDashboard/> */}
+      {/* <AdminDashboard /> */}
     </>
   )
 }
