@@ -1,7 +1,8 @@
-import { useEffect } from 'react'
+import { useEffect, useContext } from 'react'
 import { AdminDashboard, EmployeeDashboard, Login } from './components/Index'
 import { getLocalStorage, setLocalStorage } from './utils/LocalStorage'
 import { useState } from 'react'
+import { AuthContext } from './context/AuthProvider'
 
 const App = () => {
   
@@ -16,6 +17,9 @@ const App = () => {
       console.log("Invalid Credentials");
     }
   }
+
+  const data = useContext(AuthContext)
+  console.log(data);
   
 
   return (
