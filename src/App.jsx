@@ -14,10 +14,12 @@ const App = () => {
     const loggedInUser = localStorage.getItem('loggedInUser');
     
     if (loggedInUser){
-      console.log("User is loogedIn");
+      const userData = JSON.parse(loggedInUser);
+      setUser(userData.role)
+      setLoggedInUserData(userData.data)
     }
 
-  })
+  }, [])
 
   const handleLogin=(email, password)=>{
     if (email === 'admin@example.com' && password === '123'){
@@ -29,7 +31,7 @@ const App = () => {
         setUser('employee')
         setLoggedInUserData(employee)
       }
-      localStorage.setItem('loggedInUser', JSON.stringify({role: 'employee'}))
+      localStorage.setItem('loggedInUser', JSON.stringify({role: 'employee', data:employee}))
     } else {
       console.log("Invalid Credentials");
     }
