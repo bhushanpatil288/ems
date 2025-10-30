@@ -1,4 +1,4 @@
-const CreateTask = () => {
+const CreateTask = ({data}) => {
   return (
     <div>
       <form className='flex flex-wrap w-full items-center justify-between p-5 bg-[#1c1c1c] mt-5'>

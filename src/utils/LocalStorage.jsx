@@ -1,8 +1,15 @@
 const employees = [
   {
     "id": 1,
+    "firstName": "Alice",
     "email": "alice.johnson@example.com",
     "password": "123",
+    "taskCount": {
+      "active": 1,
+      "newTask": 1,
+      "completed": 1,
+      "failed": 1
+    },
     "tasks": [
       {
         "taskTitle": "Prepare monthly sales report",
@@ -38,8 +45,15 @@ const employees = [
   },
   {
     "id": 2,
+    "firstName": "Benjamin",
     "email": "benjamin.choi@example.com",
     "password": "123",
+    "taskCount": {
+      "active": 1,
+      "newTask": 2,
+      "completed": 1,
+      "failed": 1
+    },
     "tasks": [
       {
         "taskTitle": "Code review for new feature",
@@ -85,8 +99,15 @@ const employees = [
   },
   {
     "id": 3,
+    "firstName": "Carla",
     "email": "carla.mendez@example.com",
     "password": "123",
+    "taskCount": {
+      "active": 2,
+      "newTask": 2,
+      "completed": 1,
+      "failed": 1
+    },
     "tasks": [
       {
         "taskTitle": "Create marketing campaign",
@@ -142,8 +163,15 @@ const employees = [
   },
   {
     "id": 4,
+    "firstName": "Daniel",
     "email": "daniel.smith@example.com",
     "password": "123",
+    "taskCount": {
+      "active": 1,
+      "newTask": 2,
+      "completed": 1,
+      "failed": 1
+    },
     "tasks": [
       {
         "taskTitle": "Database optimization",
@@ -189,8 +217,79 @@ const employees = [
   },
   {
     "id": 5,
+    "firstName": "Emma",
     "email": "emma.kapoor@example.com",
     "password": "123",
+    "taskCount": {
+      "active": 2,
+      "newTask": 2,
+      "completed": 1,
+      "failed": 1
+    },
+    "tasks": [
+      {
+        "taskTitle": "Organize training workshop",
+        "taskDescription": "Coordinate internal skill-building workshop for team members.",
+        "taskDate": "2025-10-20",
+        "category": "HR",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "taskTitle": "Employee feedback survey",
+        "taskDescription": "Prepare survey forms and analyze responses.",
+        "taskDate": "2025-10-23",
+        "category": "HR",
+        "active": false,
+        "newTask": false,
+        "completed": true,
+        "failed": false
+      },
+      {
+        "taskTitle": "Policy update draft",
+        "taskDescription": "Update remote work policy and share for review.",
+        "taskDate": "2025-10-25",
+        "category": "Administration",
+        "active": false,
+        "newTask": true,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "taskTitle": "Prepare annual report",
+        "taskDescription": "Summarize HR initiatives and statistics for the year.",
+        "taskDate": "2025-10-28",
+        "category": "Reporting",
+        "active": false,
+        "newTask": false,
+        "completed": false,
+        "failed": true
+      },
+      {
+        "taskTitle": "New employee onboarding",
+        "taskDescription": "Assist new hires with account setup and documentation.",
+        "taskDate": "2025-10-30",
+        "category": "Onboarding",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "firstName": "Emma",
+    "email": "emma@example.com",
+    "password": "123",
+    "taskCount": {
+      "active": 2,
+      "newTask": 2,
+      "completed": 1,
+      "failed": 1
+    },
     "tasks": [
       {
         "taskTitle": "Organize training workshop",
@@ -249,6 +348,7 @@ const employees = [
 const admin = [
   {
     "id": 1,
+    "firstName": "Admin",
     "email": "admin@example.com",
     "password": "123"
   }

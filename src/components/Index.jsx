@@ -9,5 +9,9 @@ import CreateTask from './other/CreateTask';
 import AllTask from './other/AllTask';
 
 import TaskList from './TaskList/TaskList';
+import AcceptTask from './TaskList/AcceptTask';
+import CompleteTask from './TaskList/CompleteTask'
+import FailedTask from './TaskList/FailedTask'
+import NewTask from './TaskList/NewTask'
 
-export { Login, EmployeeDashboard, AdminDashboard, Header, TaskListNumbers, CreateTask, AllTask, TaskList };
+export { Login, EmployeeDashboard, AdminDashboard, Header, TaskListNumbers, CreateTask, AllTask, TaskList, AcceptTask, CompleteTask, FailedTask, NewTask };
