@@ -1,13 +1,13 @@
 import {Header, CreateTask, AllTask} from '../Index'
 
-const AdminDashboard = ({data}) => {
+const AdminDashboard = () => {
   return (
     <div className='h-screen w-full p-10'>
-    <Header data = {data} />
+    <Header />
 
-    <CreateTask data = {data}/>
+    <CreateTask />
 
-    <AllTask data = {data}/>
+    <AllTask />
 
     </div>
   )
