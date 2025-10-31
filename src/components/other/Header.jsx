@@ -1,6 +1,6 @@
 
 
-const Header = ({data}) => {
+const Header = ({data, changeUser}) => {
 
   let username;
   if(!data){
@@ -11,7 +11,8 @@ const Header = ({data}) => {
 
   const logOutUser = () =>{
     localStorage.setItem('loggedInUser','')
-    window.location.reload();
+    changeUser('');
+    // window.location.reload();
   }
   
   return (

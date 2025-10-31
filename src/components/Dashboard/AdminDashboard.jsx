@@ -1,9 +1,9 @@
 import {Header, CreateTask, AllTask} from '../Index'
 
-const AdminDashboard = () => {
+const AdminDashboard = (props) => {
   return (
     <div className='h-screen w-full p-10'>
-    <Header />
+    <Header changeUser = {props.changeUser} />
 
     <CreateTask />
 
