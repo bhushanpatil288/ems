@@ -45,12 +45,12 @@ const CreateTask = () => {
         }} 
         className='flex flex-wrap w-full items-center justify-between p-5 mt-5'
       >
-        <div className='w-1/2 flex flex-col gap-3'>
+        <div className='w-full md:w-1/2 flex flex-col gap-3'>
 
           <div>
             <h3 className='text-sm text-gray-300 mb-0.5'>Task Title</h3>
             <input 
-              className='border-[1px] w-75 px-2 py-1 rounded outline-none' 
+              className='border-[1px] md:w-75 px-2 py-1 rounded outline-none w-full' 
               type='text' 
               placeholder='Make a UI Design' 
               value={taskTitle}
@@ -63,7 +63,7 @@ const CreateTask = () => {
           <div>
             <h3 className='text-sm text-gray-300 mb-0.5'>Date</h3>
             <input 
-              className='border-[1px] w-75 px-2 py-1 rounded outline-none' 
+              className='border-[1px] md:w-75 px-2 py-1 rounded outline-none w-full' 
               type='date' 
               value={taskDate}
               onChange={(e)=>{
@@ -75,7 +75,7 @@ const CreateTask = () => {
           <div>
             <h3 className='text-sm text-gray-300 mb-0.5'>Assign to</h3>
             <input 
-              className='border-[1px] w-75 px-2 py-1 rounded outline-none' 
+              className='border-[1px] md:w-75 px-2 py-1 rounded outline-none w-full' 
               type='text' 
               placeholder='Employee Name'
               value={assignedTo}
@@ -88,7 +88,7 @@ const CreateTask = () => {
           <div>
             <h3 className='text-sm text-gray-300 mb-0.5'>Category</h3>
             <input 
-              className='border-[1px] w-75 px-2 py-1 rounded outline-none' 
+              className='border-[1px] md:w-75 px-2 py-1 rounded outline-none w-full' 
               type='text' 
               placeholder='Design, dev, etc' 
               value={category}
@@ -100,7 +100,7 @@ const CreateTask = () => {
 
         </div>
         
-        <div className='w-1/2'>
+        <div className='w-full md:w-1/2'>
           <h3 className='text-sm text-gray-300 mb-0.5'>Description</h3>
           <textarea 
             className='border-[1px] w-full px-3 py-2' 

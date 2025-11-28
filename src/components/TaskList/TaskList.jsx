@@ -3,7 +3,7 @@ import {AcceptTask, CompleteTask, FailedTask, NewTask} from '../Index'
 
 const TaskList = ({data}) => {
   return (
-    <div id='tasklist' className='h-[55%] overflow-x-auto flex items-center justify-start gap-5 flex-nowrap w-full py-5'>
+    <div id='tasklist' className='h-[55%] md:overflow-x-auto flex items-center justify-center md:justify-start gap-5 flex-wrap md:flex-nowrap w-full py-5'>
       {data.tasks.map((e, idx)=>{
         if(e.newTask){
           return <NewTask key={idx} taskData = {e} />
