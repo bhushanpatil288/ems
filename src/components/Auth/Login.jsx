@@ -16,7 +16,7 @@ const Login = ({handleLogin}) => {
 
   return (
     <div className="flex  h-screen w-screen justify-center items-center">
-      <div className="border-2 border-emerald-600 p-20 rounded-xl">
+      <div className="border-2 border-blue-600 p-20 rounded-xl bg-gradient-to-tr from-blue-400 to-blue-800 shadow-2xl">
 
           <form 
           onSubmit={(e)=>{submitHandler(e)}}
@@ -26,7 +26,7 @@ const Login = ({handleLogin}) => {
             <input 
               type="email" 
               placeholder="Email" 
-              className="border-2 border-emerald-600 py-3 text-xl px-5 rounded-full outline-none placeholder:text-gray-400" 
+              className="border-2 border-blue-600 py-3 text-xl px-5 rounded-full outline-none placeholder:text-gray-400 bg-white" 
               required
               value={email}
               onChange={(e)=>{
@@ -37,7 +37,7 @@ const Login = ({handleLogin}) => {
             <input 
               type="password" 
               placeholder="Enter your password" 
-              className="border-2 mt-3 border-emerald-600 py-3 text-xl px-5 rounded-full outline-none placeholder:text-gray-400" 
+              className="border-2 mt-3 border-blue-600 py-3 text-xl px-5 rounded-full outline-none placeholder:text-gray-400 bg-white" 
               value={pass}
               onChange={(e)=>{
                 setPass(e.target.value);
@@ -46,7 +46,7 @@ const Login = ({handleLogin}) => {
               />
 
             <button 
-              className="border-emerald-600 mt-5 bg-emerald-600 rounded-full py-1 px-5">
+              className="border-blue-600 mt-5 bg-blue-600 rounded-full py-1 px-5 bg-gradient-to-t from-blue-200 to-blue-500 cursor-pointer hover:scale-105 active:scale-95 transition">
               Login
             </button>
 

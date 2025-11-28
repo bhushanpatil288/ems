@@ -43,7 +43,7 @@ const CreateTask = () => {
       <form onSubmit={(e)=>{
           submitHandler(e);
         }} 
-        className='flex flex-wrap w-full items-center justify-between p-5 bg-[#1c1c1c] mt-5'
+        className='flex flex-wrap w-full items-center justify-between p-5 mt-5'
       >
         <div className='w-1/2 flex flex-col gap-3'>
 
@@ -111,7 +111,7 @@ const CreateTask = () => {
                 }}
           >
           </textarea>
-          <button className='w-full py-3 bg-emerald-500 hover:bg-emerald-600 text-sm mt-4'>Create Task</button>
+          <button className='w-full py-3 bg-emerald-500 hover:bg-emerald-600 text-sm mt-4 cursor-pointer'>Create Task</button>
         </div>
        
       </form>
