@@ -15,7 +15,7 @@ const Login = ({handleLogin}) => {
   }
 
   return (
-    <div className="flex  h-screen w-screen justify-center items-center">
+    <div className="flex justify-center items-center mt-50">
       <div className="border-2 border-blue-600 p-20 rounded-xl bg-gradient-to-tr from-blue-400 to-blue-800 shadow-2xl">
 
           <form 
